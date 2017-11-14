@@ -7,6 +7,7 @@ var about=['/about','/about.html']
 var pro=['/pro','/pro.html']
 var cases=['/case','/case.html']
 var news=['/news','/news.html']
+var download=['/download','/download.html']
 var contact=['/contact','/contact.html']
 
 router.get(index, function(req, res, next) {
@@ -23,6 +24,14 @@ router.get(pro, function(req, res, next) {
 
 router.get(cases, function(req, res, next) {
     res.render('case');
+});
+
+router.get(news, function(req, res, next) {
+    res.render('news');
+});
+
+router.get(download, function(req, res, next) {
+    res.render('download');
 });
 
 router.get(contact, function(req, res, next) {
